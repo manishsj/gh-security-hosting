@@ -70,7 +70,7 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::639597572306:role/GitHubDemo1
           aws-region: us-east-1
-      - name: Deploy site
+      - name: Deploy site AWS
         id: deploy
         uses: ./.github/actions/deploy-s3-docker
         with:
